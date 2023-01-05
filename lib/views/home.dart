@@ -18,9 +18,9 @@ class HomePage extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 131,
-                  height: 131,
+                  "assets/images/logo.png",
+                  height: 101,
+                  width: 101,
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.54,
@@ -71,15 +71,15 @@ class HomePage extends StatelessWidget {
           Positioned(
             top: MediaQuery.of(context).size.height * 0.25,
             left: MediaQuery.of(context).size.width * 0.15,
-            child: const About(),
-            // child: const Text(
-            //   "Hi there.\nGood to see you.\nWelcome to Emaciated Spiders.",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 56,
-            //   ),
-            // ),
+            // child: const About(),
+            child: const Text(
+              "Hi there.\nGood to see you.\nWelcome to Emaciated Spiders.",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 56,
+              ),
+            ),
           ),
         ],
       ),
